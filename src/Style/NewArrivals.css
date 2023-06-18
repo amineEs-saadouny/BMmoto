@@ -1,0 +1,40 @@
+.newArrivals-h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 20px;
+  background-color: whitesmoke;
+  color: #333;
+}
+
+.newArrivals-container {
+  width: 100%;
+  position: relative;
+}
+
+.newArrivals::-webkit-scrollbar {
+  width: 0;
+}
+
+.newArrivals {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 45px;
+  min-width: 100%;
+  display: flex;
+  gap: 40px;
+  transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .newArrivals-h1 {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}

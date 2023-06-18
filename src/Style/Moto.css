@@ -1,0 +1,295 @@
+.moto-container {
+  padding-top: 20px;
+}
+
+.moto-top-section {
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row;
+  gap: 2rem;
+}
+
+.moto-top-section-img {
+  display: block;
+  width: 60%;
+  height: 80vh;
+  object-fit: contain;
+}
+
+.moto-top-section-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 40%;
+  padding-top: 40px;
+}
+
+.moto-top-section-info-h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.moto-top-section-info-h1-span {
+  white-space: nowrap;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.moto-top-section-info-buttons {
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.moto-top-section-info-button {
+  flex-grow: 1;
+  flex-basis: 0;
+  width: auto;
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.534);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 14px;
+  background-color: transparent;
+  color: gray;
+  transition: 0.3s;
+}
+
+.description-checkbox,
+.dw-checkbox,
+.engine-checkbox {
+  display: none;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.589);
+  font-size: 16px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.btn-active {
+  color: white;
+  background-color: var(--red);
+  border-bottom: 2px solid var(--red);
+}
+
+.moto-top-section-info-engine,
+.moto-top-section-info-description,
+.moto-top-section-info-DW {
+  display: none;
+}
+
+.moto-top-section-info-description {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.active-p {
+  display: block;
+}
+
+.moto-buttom-section-h1,
+.moto-buttom-section-video {
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 20px;
+  background-color: whitesmoke;
+  color: #333;
+  margin-top: 20px;
+}
+
+.moto-buttom-section-video-iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.moto-buttom-section-video-iframe {
+  width: 90%;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 8px -3px #333;
+}
+
+.moto-buttom-section-gallery {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+  width: 100%;
+}
+
+.moto-buttom-section-gallery-top,
+.moto-buttom-section-gallery-bottom {
+  display: flex;
+  flex-flow: row;
+  width: 90%;
+  gap: 1rem;
+}
+
+.moto-buttom-section-gallery-top .img img,
+.moto-buttom-section-gallery-bottom .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.moto-buttom-section-gallery-top .img img:hover,
+.moto-buttom-section-gallery-bottom .img img:hover {
+  transform: scale(120%);
+}
+
+.moto-buttom-section-gallery-top .img {
+  cursor: pointer;
+  width: 50%;
+  height: 350px;
+  object-fit: contain;
+  overflow: hidden;
+  box-shadow: 1px 1px 8px -3px #333;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.moto-buttom-section-gallery-top .img:hover {
+  background-size: 130%;
+}
+
+.moto-buttom-section-gallery-bottom .img {
+  cursor: pointer;
+  height: 280px;
+  width: 33%;
+  object-fit: contain;
+  overflow: hidden;
+  box-shadow: 1px 1px 8px -3px #333;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.moto-buttom-section-gallery-bottom .img:hover {
+  background-size: 140%;
+}
+
+.from-the-same-brand-container {
+  padding: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .moto-top-section {
+    margin-top: 40px;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0rem;
+  }
+  .moto-top-section-img {
+    display: block;
+    width: 40%;
+    height: 30vh;
+    object-fit: contain;
+  }
+  .moto-top-section-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    min-width: 60%;
+    padding-inline: 10px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .moto-top-section {
+    width: 100%;
+    flex-flow: column;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  .moto-top-section-img {
+    display: block;
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+  }
+  .moto-top-section-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-inline: 10px;
+    padding-top: 0px;
+  }
+  .moto-top-section-info-h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .moto-top-section-info-h1-span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .moto-top-section-info-button {
+    font-size: 14px;
+  }
+  li {
+    font-size: 12px;
+  }
+  .moto-top-section-info-description {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .moto-buttom-section-h1,
+  .moto-buttom-section-video {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .moto-buttom-section-gallery-top,
+  .moto-buttom-section-gallery-bottom {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  .moto-buttom-section-gallery-top .img,
+  .moto-buttom-section-gallery-bottom .img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .moto-buttom-section-gallery-bottom .img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .moto-buttom-section-gallery {
+    gap: 1rem;
+  }
+  .moto-buttom-section-video-iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px -3px #333;
+  }
+}
